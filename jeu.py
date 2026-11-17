@@ -1,15 +1,20 @@
-from pymongo import MongoClient
-
-client = MongoClient("mongodb://localhost:27017/")
-db = client["bdd_python"]
-
 #Afficher le menu
-
-
 #afficher les options numérotées
-
-
 #Demander a l'utilisateur de faire un choix valide
 #tant que infini
-#choix n'est pas isdigit(1, 3, start + 1)
-#convertir 
+#input un choix
+#if choix est choix_valide
+#return le choix
+#sinon print "le choix n'est pas valide"
+
+
+#def choix_valide
+#si choix n'est pas isdigit()
+
+
+
+
+
+#def option : classement, jouer, quitter
+
+#associer un numero aux options avec enumerate
