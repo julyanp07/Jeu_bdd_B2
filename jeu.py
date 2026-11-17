@@ -47,6 +47,10 @@
 #       demander un pseudo
 #       si le pseudo est vide
 #       afficher message d'erreur
+#       choisir_equipe()
+
+
+#def choisir_equipe
 
 
 
