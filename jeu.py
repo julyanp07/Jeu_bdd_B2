@@ -1,3 +1,4 @@
+#def main
 
 #afficher menu
 #récuperer un choix valide parmi les options
@@ -9,6 +10,8 @@
 #       si le choix est valide
 #           retourner le choix valide
 #       afficher un message d'erreur
+
+
 
 
 #choix est valide
@@ -23,6 +26,29 @@
 #   tant que infini
 #       afficher_options_numerotees(options)
 #       
+
+
+
+#si choix est 1
+#   demarrer_jeu()
+#
+#si choix est 2
+#   afficher_classement()
+#
+#si choix est 3
+#   break
+
+
+
+#def demarrer_jeu()
+#
+#   initilaiser un pseudo a vide
+#   tant que le pseudo est vide 
+#       demander un pseudo
+#       si le pseudo est vide
+#       afficher message d'erreur
+
+
 
 
 
