@@ -1,20 +1,29 @@
-#Afficher le menu
-#afficher les options numérotées
-#Demander a l'utilisateur de faire un choix valide
-#tant que infini
-#input un choix
-#if choix est choix_valide
-#return le choix
-#sinon print "le choix n'est pas valide"
+
+#afficher menu
+#récuperer un choix valide parmi les options
+#   tant que infini
+#       afficher les options numerotées
+#           pour chaque option dans enumerate(options, start=1)
+#               afficher {i}. {option}
+#       demander un choix a l'utilisateur
+#       si le choix est valide
+#           retourner le choix valide
+#       afficher un message d'erreur
 
 
-#def choix_valide
-#si choix n'est pas isdigit()
+#choix est valide
+#   si le choix n'est pas isdigit()
+#       return False
+#   convertir le choix en entier
+#   si le choix est inférieur au minimum ou superieur au maximum
+#       return False
+#   return True
+
+#afficher les options numerotées 
+#   tant que infini
+#       afficher_options_numerotees(options)
+#       
 
 
 
 
-
-#def option : classement, jouer, quitter
-
-#associer un numero aux options avec enumerate
