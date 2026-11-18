@@ -1,6 +1,9 @@
 #def main
 
 #afficher menu
+
+
+
 #récuperer un choix valide parmi les options
 #   tant que infini
 #       afficher les options numerotées
@@ -12,9 +15,7 @@
 #       afficher un message d'erreur
 
 
-
-
-#choix est valide
+#choix_est_valide
 #   si le choix n'est pas isdigit()
 #       return False
 #   convertir le choix en entier
@@ -22,11 +23,18 @@
 #       return False
 #   return True
 
-#afficher les options numerotées 
-#   tant que infini
-#       afficher_options_numerotees(options)
-#       
 
+#def recuperer_choix_utilisateur
+#   tant que infini
+#       afficher_options_numerotees
+#       entrer un choix ("Entrez votre choix :")
+#       si choix_est_valide(choix, 1, len(options)):
+#           retourner int(choix)
+#       print("Choix invalide, réessayer")
+
+#def afficher_options_numerotees 
+#   pour chaque option dans enumerate(options, start=1)
+#       print(f"{1}. {option}")
 
 
 #si choix est 1
@@ -39,9 +47,7 @@
 #   break
 
 
-
 #def demarrer_jeu()
-#
 #   initilaiser un pseudo a vide
 #   tant que le pseudo est vide 
 #       demander un pseudo
@@ -51,7 +57,11 @@
 
 
 #def choisir_equipe
-
+#   recuperer les persos de la db
+#   initialiser une equipe vide
+#   tant que l'equipe a moins de 3 persos
+#       afficher l'equipe de l'utilisateur
+#       
 
 
 
