@@ -86,3 +86,13 @@
 
 
 
+#besoin la liste des personnages
+#   creer la variable equipe vide
+#   tant que l'equipe n'est pas complete
+#       determiner la liste des personnages disponibles
+#       construire la liste des options a afficher disponibles
+#       recuperer choix utilisateur valide
+#       ajouter le personnage choisi a l'equipe index
+#   retourner l'equipe
+
+#determiner la liste des personnages disponibles
