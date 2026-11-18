@@ -61,7 +61,17 @@
 #   initialiser une equipe vide
 #   tant que l'equipe a moins de 3 persos
 #       afficher l'equipe de l'utilisateur
-#       
+#       pour chaque perso dans equipe
+#           afficher le nom du perso
+#       afficher les persos disponibles
+#       disponible = perso pas dans equipe
+#       options = chaque perso disponible
+#           afficher les noms pv atk def
+#       choix = recuperer_choix_utilisateur(options)
+#       ajouter choix a l'equipe
+#   retourner l'equipe
+
+
 
 
 
