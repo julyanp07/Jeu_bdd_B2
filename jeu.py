@@ -38,22 +38,22 @@
 
 
 #si choix est 1
-#   demarrer_jeu()
+#   demarrer_jeu
 #
 #si choix est 2
-#   afficher_classement()
+#   afficher_classement
 #
 #si choix est 3
 #   break
 
 
-#def demarrer_jeu()
+#def demarrer_jeu
 #   initilaiser un pseudo a vide
 #   tant que le pseudo est vide 
 #       demander un pseudo
 #       si le pseudo est vide
 #       afficher message d'erreur
-#       choisir_equipe()
+#       choisir_equipe
 
 
 #def choisir_equipe
@@ -72,7 +72,16 @@
 #   retourner l'equipe
 
 
+#def est_vivant
+#   retourner pv du perso > 0
 
+#def equipe_vivante
+#   retourner les persos vivants a l'equipe
+
+#def attaquer
+#   degats = max entre 1 et atk de l'attaquant - def du defenseur
+#   si degats < 1
+#       degats = 1
 
 
 
