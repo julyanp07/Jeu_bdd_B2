@@ -75,7 +75,7 @@
 #def est_vivant
 #   retourner pv du perso si superieur a 0
 
-#def equipe_vivante
+#def est_equipe_vivante
 #   retourner les persos vivants a l'equipe
 
 
@@ -101,6 +101,14 @@
 #       ajouter le personnage choisi a l'equipe index
 
 #determiner la liste des personnages disponibles
+#   initialiser la liste disponible
+#   pour personnage dans liste de personnage
+#       si personnage n'est pas dans equipe
+#           ajouter le personnage dans disponible
+#   retourner disponible
 
-
-#construire options affichables
+#construire options affichables, besoin de disponible
+#   initialiser la liste option
+#   pour chaque personnage dans enumerate (disponible, start=1)
+#       ajouter le personnage a options
+#   retourner options
