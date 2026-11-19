@@ -73,15 +73,21 @@
 
 
 #def est_vivant
-#   retourner pv du perso > 0
+#   retourner pv du perso si superieur a 0
 
 #def equipe_vivante
 #   retourner les persos vivants a l'equipe
 
-#def attaquer
-#   degats = max entre 1 et atk de l'attaquant - def du defenseur
-#   si degats < 1
-#       degats = 1
+
+#def tour_joueur
+#   attaquant egal perso vivant au hasard dans equipe vivante
+#   la cible est l'ennemi vivant
+#   attaquer
+
+#def tour_enemi
+#   l'attaquant est l'ennemi
+#   la cible est un perso vivant au hasard de equipe vivante
+#   attaquer
 
 
 
@@ -93,6 +99,8 @@
 #       construire la liste des options a afficher disponibles
 #       recuperer choix utilisateur valide
 #       ajouter le personnage choisi a l'equipe index
-#   retourner l'equipe
 
 #determiner la liste des personnages disponibles
+
+
+#construire options affichables
