@@ -1,7 +1,14 @@
-#def main
+#importer random
+#depuis connexion importer la collection personnages et monstres
 
-#afficher menu
-
+#definir le main
+#   les options sont jouer et quitter
+#   tant que infini
+#       choix est egal a recuperer choix utilisateur
+#       si le choix est 1
+#           appeler demarrer jeu
+#       si le choix est 2
+#           break
 
 
 #récuperer un choix valide parmi les options
@@ -34,17 +41,8 @@
 
 #def afficher_options_numerotees 
 #   pour chaque option dans enumerate(options, start=1)
-#       print(f"{1}. {option}")
+#       print(f"{i}. {option}")
 
-
-#si choix est 1
-#   demarrer_jeu
-#
-#si choix est 2
-#   afficher_classement
-#
-#si choix est 3
-#   break
 
 
 #def demarrer_jeu
@@ -53,12 +51,18 @@
 #       demander un pseudo
 #       si le pseudo est vide
 #       afficher message d'erreur
-#       choisir_equipe
+#   equipe est egal a choisir equipe dans la collection personnage
+#   ennemi est egal a choisir ennemi au hasard dans la collection monstres
+#   victoire est egal a lancer combat
+#   si victoire
+#       afficher victoire
+#   sinon
+#       afficher defaite
 
 
 #besoin la liste des personnages
 #   creer la variable equipe vide
-#   tant que l'equipe n'est pas complete
+#   tant que l'equipe n'est pas de 3
 #       determiner la liste des personnages disponibles
 #       construire la liste des options a afficher disponibles
 #       recuperer choix utilisateur valide
@@ -79,20 +83,25 @@
 
 
 #definir tour joueur
-#   l'attaquant est un personnage vivant de l'equipe
-#   la cible est l'ennemi
-#   attaquer la cible
+#   vivants est egal a lister vivants
+#   construire les options
+#   choix est recuperer choix utilisateur
+#   attaquant est vivant choix - 1
+#   attaquer
 
 #definir tour ennemi
-#   l'attaquant est l'ennemi vivant
+#   vivants est lister vivants
 #   la cible est un personnage vivant au hasard dans l'equipe vivante
-#   attaquer la cible
+#   attaquer
 
 #definir est vivant, a besoin de perso
-#   retourner les pv si ils sont superieur a zero
+#   retourner vrai si les pv si ils sont superieur a zero
 
 #definir est equipe vivante, a besoin de equipe
-
+#   pour chaque perso dans equipe
+#       si est vivant
+#           retourner vrai
+#   retourner faux
 
 #definir attaquer
 #   les degats sont l'attaque de l'attaquant moins la defense du defenseur
@@ -104,3 +113,20 @@
 #   si le defenseur est pas vivant
 #   afficher mort
 
+#definir lancer combat
+#   tant que est equipe vivante(equipe) et est vivant(ennemi)
+#       afficher les pv des deux equipes
+#       appeler tour joueur
+#       si l'ennemi n'est pas vivant
+#           break
+#       appeler tour_ennemi
+#   retourner est equipe vivante
+
+#definir lister vivants
+#   initialiser la liste vivant a vide
+#   pour chaque perso dans equipe
+#       si est vivant
+#           ajouter perso a vivants
+#   retourner vivants
+
+#appeler main
