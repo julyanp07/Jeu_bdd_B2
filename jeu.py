@@ -96,4 +96,11 @@
 
 #definir attaquer
 #   les degats sont l'attaque de l'attaquant moins la defense du defenseur
+#   si les degats sont inferieurs a 1
+#       mettre 1 degat
+#   retirer les degats au pv du defenseur
+#   si les pv du defenseur sont inferieur a 0
+#       mettre les pv a 0
+#   si le defenseur est pas vivant
+#   afficher mort
 
