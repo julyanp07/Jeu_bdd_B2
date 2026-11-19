@@ -56,42 +56,6 @@
 #       choisir_equipe
 
 
-#def choisir_equipe
-#   recuperer les persos de la db
-#   initialiser une equipe vide
-#   tant que l'equipe a moins de 3 persos
-#       afficher l'equipe de l'utilisateur
-#       pour chaque perso dans equipe
-#           afficher le nom du perso
-#       afficher les persos disponibles
-#       disponible = perso pas dans equipe
-#       options = chaque perso disponible
-#           afficher les noms pv atk def
-#       choix = recuperer_choix_utilisateur(options)
-#       ajouter choix a l'equipe
-#   retourner l'equipe
-
-
-#def est_vivant
-#   retourner pv du perso si superieur a 0
-
-#def est_equipe_vivante
-#   retourner les persos vivants a l'equipe
-
-
-#def tour_joueur
-#   attaquant egal perso vivant au hasard dans equipe vivante
-#   la cible est l'ennemi vivant
-#   attaquer
-
-#def tour_enemi
-#   l'attaquant est l'ennemi
-#   la cible est un perso vivant au hasard de equipe vivante
-#   attaquer
-
-
-
-
 #besoin la liste des personnages
 #   creer la variable equipe vide
 #   tant que l'equipe n'est pas complete
@@ -100,7 +64,7 @@
 #       recuperer choix utilisateur valide
 #       ajouter le personnage choisi a l'equipe index
 
-#determiner la liste des personnages disponibles
+#determiner la liste des personnages disponibles, besoin de la liste de personnage et de equipe
 #   initialiser la liste disponible
 #   pour personnage dans liste de personnage
 #       si personnage n'est pas dans equipe
@@ -109,6 +73,27 @@
 
 #construire options affichables, besoin de disponible
 #   initialiser la liste option
-#   pour chaque personnage dans enumerate (disponible, start=1)
+#   pour chaque index.personnage dans enumerate (disponible, start=1)
 #       ajouter le personnage a options
 #   retourner options
+
+
+#definir tour joueur
+#   l'attaquant est un personnage vivant de l'equipe
+#   la cible est l'ennemi
+#   attaquer la cible
+
+#definir tour ennemi
+#   l'attaquant est l'ennemi vivant
+#   la cible est un personnage vivant au hasard dans l'equipe vivante
+#   attaquer la cible
+
+#definir est vivant, a besoin de perso
+#   retourner les pv si ils sont superieur a zero
+
+#definir est equipe vivante, a besoin de equipe
+
+
+#definir attaquer
+#   les degats sont l'attaque de l'attaquant moins la defense du defenseur
+
